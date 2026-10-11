@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>German Vocabulary – Nouns &amp; Verbs</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fff;--fg:#1d1d1f;--acc:#bfdbfe;--dat:#bbf7d0;--gen:#e9d5ff;--sein:#fed7aa;--card:#f5f5f7;--line:#d2d2d7}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1c1c1e;--fg:#f2f2f7;--acc:#1e4a8a;--dat:#1b5e35;--gen:#5b3a8a;--sein:#9a4a0c;--card:#2c2c2e;--line:#48484a}}
+:root[data-theme="dark"]{--bg:#1c1c1e;--fg:#f2f2f7;--acc:#1e4a8a;--dat:#1b5e35;--gen:#5b3a8a;--sein:#9a4a0c;--card:#2c2c2e;--line:#48484a}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;max-width:1000px;margin:0 auto;padding:16px;line-height:1.5}
+h1{font-size:1.4rem}h2{font-size:1.15rem;margin:1.6rem 0 .2rem}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:640px;background:var(--card);border-radius:8px}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);vertical-align:top;font-size:.9rem}
+th{font-size:.75rem;text-transform:uppercase;opacity:.7}
+.b{padding:1px 6px;border-radius:4px;font-size:.78rem;white-space:nowrap;margin-right:3px;border:1px solid var(--line)}
+.Akk{background:var(--acc)}.Dat{background:var(--dat)}.Gen{background:var(--gen)}.sein{background:var(--sein)}
+.meta{opacity:.75;font-size:.88rem;margin:0 0 .5rem}
+.bar{display:flex;gap:6px;flex-wrap:wrap;align-items:center;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding:8px 0;z-index:2}
+button{font:inherit;font-size:.9rem;padding:5px 12px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--fg)}
+button.on{background:var(--fg);color:var(--bg)}
+.sep{width:1px;height:22px;background:var(--line);margin:0 4px}
+</style>
+</head>
+<body>
+<h1>German Vocabulary</h1>
+<p class="meta" id="count"></p>
+<div class="bar"><span id="tabs"></span><span class="sep"></span><span id="filters"></span></div>
+<div id="out"></div>
+<script>
+// Nouns: [article, word, plural, case, meaning, example]
+var N=[
+["der","Herbst","Herbste","Dat","autumn","Im Herbst habe ich mein Studium angefangen."],
+["der","Juni","–","Dat","June","Im Juni habe ich meine Prüfungen geschrieben."],
+["der","August","–","Dat","August","Im August hat meine Schwester geheiratet."],
+["der","Kurs","Kurse","Dat","course","Ich habe an einem Kurs teilgenommen."],
+["der","Spaß","–","Akk","fun","Es macht wirklich Spaß."],
+["der","Sport","–","Akk","sport","Ich mache auch gern Sport."],
+["der","Verein","Vereine","Dat","club","Ich melde mich bald in einem Verein an."],
+["der","Freund","Freunde","Akk","friend (m)","Wir haben auch Lillys Freunde in Madrid besucht."],
+["die","Ausbildung","Ausbildungen","Akk","training","Ich habe meine Ausbildung beendet."],
+["die","Augenoptikerin","Augenoptikerinnen","Dat","optician (f)","Meine Ausbildung zur Augenoptikerin."],
+["die","Freundin","Freundinnen","Dat","friend (f), girlfriend","Ich bin mit einer Freundin nach Spanien geflogen."],
+["die","Muttersprache","Muttersprachen","Akk","mother tongue","Ich habe zwei Muttersprachen."],
+["die","Note","Noten","Akk","grade","Ich habe gute Noten bekommen."],
+["die","Prüfung","Prüfungen","Akk","exam","Ich habe meine Prüfungen geschrieben."],
+["die","Stadt","Städte","Dat","city","Uns gefällt das Leben in der Stadt."],
+["die","Wohnung","Wohnungen","Akk","flat","Ich habe keine Wohnung gefunden."],
+["die","Woche","Wochen","Akk","week","Wir sind drei Wochen lang gefahren."],
+["die","Leute","(only plural)","Akk","people","Wir haben schon viele Leute kennengelernt."],
+["das","Apartment","Apartments","Akk","apartment","Ich habe ein Apartment im Zentrum."],
+["das","Auto","Autos","Akk","car","Wir haben ein Auto gemietet."],
+["das","Buch","Bücher","Akk","book","Ein gutes Buch lesen."],
+["das","Fest","Feste","Akk","party, celebration","Ich habe das Fest organisiert."],
+["das","Glück","–","Dat","luck","Zum Glück habe ich gute Noten bekommen."],
+["das","Hobby","Hobbys","Akk","hobby","Ich habe ein neues Hobby."],
+["das","Jahr","Jahre","Akk","year","Ich bin letztes Jahr umgezogen."],
+["das","Land","Länder","Akk","country","Wir sind durch das Land gefahren."],
+["das","Pferd","Pferde","Akk","horse","Meine Eltern haben ein Pferd."],
+["das","Restaurant","Restaurants","Akk","restaurant","Wir gehen ins Restaurant."],
+["das","Sofa","Sofas","Dat","sofa","Am Wochenende auf dem Sofa liegen."],
+["das","Stadtzentrum","Stadtzentren","Dat","city centre","Wir haben ein Apartment im Stadtzentrum."],
+["das","Studium","Studien","Akk","studies","Ich habe mein Studium angefangen."],
+["das","Wochenende","Wochenenden","Dat","weekend","Am Wochenende liege ich auf dem Sofa."],
+["das","Zentrum","Zentren","Dat","centre","Ich habe ein Apartment im Zentrum."],
+["der","Park","Parks","Dat","park","Manchmal gehe ich im Park spazieren."],
+["der","Schreibtisch","Schreibtische","Dat","desk","Ich sitze viele Stunden am Schreibtisch."],
+["die","Freizeit","–","Dat","free time","In meiner Freizeit spiele ich gern online."],
+["die","Stunde","Stunden","Akk","hour","Ich sitze viele Stunden am Schreibtisch."],
+["das","Fitnessstudio","Fitnessstudios","Akk","gym","Ich gehe ins Fitnessstudio."],
+["der","Abend","Abende","Dat","evening","Chris spielt am Abend gerne Gitarre."],
+["der","Arzt","Ärzte","Dat","doctor","Sie muss zum Arzt gehen."],
+["der","Beruf","Berufe","Dat","job","Was ist sie von Beruf?"],
+["der","Besuch","Besuche","Dat","visit","Reservieren Sie vor Ihrem Besuch."],
+["der","Bibliotheksausweis","Bibliotheksausweise","Akk","library card","Sie müssen Ihren Bibliotheksausweis zeigen."],
+["der","Bruder","Brüder","Dat","brother","Ich habe meinem Bruder eine CD geschenkt."],
+["der","Eingang","Eingänge","Dat","entrance","Wir empfangen Sie am Eingang."],
+["der","Film","Filme","Akk","film","Ich möchte den neuen Film sehen."],
+["der","Geburtstag","Geburtstage","Dat","birthday","Ich bringe zum Geburtstag einen Kuchen mit."],
+["der","Kellner","Kellner","Dat","waiter","Wir sagen Ihnen den Namen vom Kellner."],
+["der","Kuchen","Kuchen","Akk","cake","Ich bringe einen Kuchen mit."],
+["der","Marktplatz","Marktplätze","Dat","market square","Eine Band hat auf dem Marktplatz gespielt."],
+["der","Montag","Montage","Akk","Monday","Ich fahre jeden Montag nach Frankfurt."],
+["der","Name","Namen","Akk","name","Wir sagen Ihnen den Namen."],
+["der","Platz","Plätze","Akk","seat, place","Wie bekomme ich einen Platz?"],
+["der","Salat","Salate","Akk","salad","Sie müssen Salat essen."],
+["der","Samstagabend","Samstagabende","Dat","Saturday evening","Am Samstagabend sind sie ins Theater gegangen."],
+["der","Sommer","Sommer","Dat","summer","Im Sommer möchte Chris Urlaub machen."],
+["der","Sonntag","Sonntage","Dat","Sunday","Am Sonntag haben sie in einem Restaurant gegessen."],
+["der","Termin","Termine","Dat","appointment","Sie bekommen vor dem Termin eine Nachricht."],
+["der","Urlaub","Urlaube","Akk","holiday","Chris möchte Urlaub machen."],
+["die","Bibliothek","Bibliotheken","Dat","library","In der Bibliothek können Sie Bücher leihen."],
+["die","Brille","Brillen","Akk","glasses","Sie müssen Ihre Brille tragen."],
+["die","CD","CDs","Akk","CD","Ich habe meinem Bruder eine CD geschenkt."],
+["die","Cousine","Cousinen","Dat","cousin (f)","Ich wohne bei meiner Cousine."],
+["die","Dunkelheit","–","Akk","darkness","Ich mag die Dunkelheit nicht."],
+["die","Geschichte","Geschichten","Akk","story","Hören Sie die Geschichte!"],
+["die","Gitarre","Gitarren","Akk","guitar","Chris spielt am Abend gerne Gitarre."],
+["die","Hausaufgabe","Hausaufgaben","Akk","homework","Sie wollen oft keine Hausaufgaben machen."],
+["die","Heizung","Heizungen","Akk","heating","Sollen wir die Heizung anmachen?"],
+["die","Kantine","Kantinen","Dat","canteen","Ich esse in der Kantine."],
+["die","Kopfschmerzen","(only plural)","Akk","headache","Ich habe Kopfschmerzen."],
+["die","Medizin","–","Akk","medicine","Sollst du Medizin nehmen?"],
+["die","Mittagspause","Mittagspausen","Dat","lunch break","In der Mittagspause esse ich in der Kantine."],
+["die","Musik","–","Akk","music","Er hört oft stundenlang Musik."],
+["die","Mutter","Mütter","Dat","mother","Susi sagt zu ihrer Mutter: …"],
+["die","Nachricht","Nachrichten","Akk","message","Sie bekommen eine Nachricht."],
+["die","Rechnung","Rechnungen","Akk","bill","Sie bekommen Ihre Rechnung."],
+["die","Rezeption","Rezeptionen","Dat","reception","An der Rezeption bestellen Sie."],
+["die","Schule","Schulen","Akk","school","Ich muss nicht in die Schule gehen."],
+["die","Speisekarte","Speisekarten","Dat","menu","Sie bestellen aus unserer Speisekarte."],
+["die","Uhr","Uhren","Akk","o'clock","Ich fahre freitags um 17 Uhr nach Heidelberg."],
+["die","Welt","Welten","Akk","world","Sie lernen eine andere Welt kennen."],
+["das","Bett","Betten","Dat","bed","Du musst im Bett bleiben."],
+["das","Bild","Bilder","Akk","picture","Im Museum können Sie Bilder sehen."],
+["das","Büro","Büros","Dat","office","Ich arbeite im Büro."],
+["das","Essen","–","Akk","food, meal","Ich möchte mein Essen sehen."],
+["das","Getränk","Getränke","Akk","drink","Sollen wir Getränke kaufen?"],
+["das","Kino","Kinos","Akk","cinema","Sollen wir zusammen ins Kino gehen?"],
+["das","Konzert","Konzerte","Akk","concert","Schüler wollen ein Konzert geben."],
+["das","Licht","Lichter","Dat","light","Man geht mit Licht zum Platz."],
+["das","Museum","Museen","Dat","museum","Im Museum können Sie Bilder sehen."],
+["das","Theater","Theater","Akk","theatre","Sie sind ins Theater gegangen."],
+["das","Wasser","–","Akk","water","Sie müssen viel Wasser trinken."],
+["der","Einkauf","Einkäufe","Akk","purchase, shopping","Durch den Einkauf in lokalen Geschäften unterstützt ihr die Gemeinschaft."],
+["die","Gemeinschaft","Gemeinschaften","Akk","community","Ihr unterstützt die Gemeinschaft."],
+["das","Geschäft","Geschäfte","Dat","shop, store","Rückgaben sind oft einfacher im Geschäft."],
+["das","Produkt","Produkte","Akk","product","Man kann Produkte ausprobieren."],
+["die","Wirtschaft","–","Akk","economy","Ihr stärkt die lokale Wirtschaft."]
+];
+// Verbs: [infinitive, meaning, present (ich / er), aux, participle, preterite (er), takes, tags, example]
+var V=[
+["anfangen","to begin","fange an / fängt an","haben","angefangen","fing an","Akk","separable, irregular","Ich habe mein Studium angefangen."],
+["sich anmelden","to sign up","melde mich an / meldet sich an","haben","angemeldet","meldete sich an","in + Dat","separable, reflexive","Ich melde mich in einem Verein an."],
+["beenden","to finish","beende / beendet","haben","beendet","beendete","Akk","","Ich habe meine Ausbildung beendet."],
+["bekommen","to get","bekomme / bekommt","haben","bekommen","bekam","Akk","irregular","Ich habe gute Noten bekommen."],
+["besuchen","to visit","besuche / besucht","haben","besucht","besuchte","Akk","","Wir haben Lillys Freunde besucht."],
+["feiern","to celebrate","feiere / feiert","haben","gefeiert","feierte","Akk","","Wir haben zusammen gefeiert."],
+["finden","to find","finde / findet","haben","gefunden","fand","Akk","irregular","Ich habe keine Wohnung gefunden."],
+["fahren","to drive, travel","fahre / fährt","sein","gefahren","fuhr","durch + Akk","irregular","Wir sind durch das Land gefahren."],
+["fliegen","to fly","fliege / fliegt","sein","geflogen","flog","nach + Dat","irregular","Ich bin nach Spanien geflogen."],
+["gefallen","to please, be liked","gefalle / gefällt","haben","gefallen","gefiel","Dat","irregular","Das hat mir gleich gefallen."],
+["gehen","to go","gehe / geht","sein","gegangen","ging","in + Akk","irregular","Wir gehen ins Restaurant."],
+["heiraten","to marry","heirate / heiratet","haben","geheiratet","heiratete","","","Meine Schwester hat geheiratet."],
+["kennenlernen","to get to know","lerne kennen / lernt kennen","haben","kennengelernt","lernte kennen","Akk","separable","Wir haben viele Leute kennengelernt."],
+["kochen","to cook","koche / kocht","haben","gekocht","kochte","Akk","","Dann kochen wir zusammen."],
+["kommen","to come","komme / kommt","sein","gekommen","kam","aus / nach + Dat","irregular","Viele Freunde sind gekommen."],
+["leben","to live","lebe / lebt","haben","gelebt","lebte","","","Lilly hat früher dort gelebt."],
+["lernen","to learn","lerne / lernt","haben","gelernt","lernte","Akk","","Ich habe sehr viel gelernt."],
+["lesen","to read","lese / liest","haben","gelesen","las","Akk","irregular","Ein gutes Buch lesen."],
+["machen","to do, make","mache / macht","haben","gemacht","machte","Akk","","Es macht wirklich Spaß."],
+["mieten","to rent","miete / mietet","haben","gemietet","mietete","Akk","","Wir haben ein Auto gemietet."],
+["organisieren","to organise","organisiere / organisiert","haben","organisiert","organisierte","Akk","","Ich habe das Fest organisiert."],
+["passieren","to happen","– / passiert","sein","passiert","passierte","","","Es ist viel passiert."],
+["renovieren","to renovate","renoviere / renoviert","haben","renoviert","renovierte","Akk","","Wir haben es zusammen renoviert."],
+["schreiben","to write","schreibe / schreibt","haben","geschrieben","schrieb","Akk","irregular","Ich habe meine Prüfungen geschrieben."],
+["spielen","to play","spiele / spielt","haben","gespielt","spielte","Akk","","Ich spiele Tennis."],
+["sprechen","to speak","spreche / spricht","haben","gesprochen","sprach","Akk","irregular","Lilly spricht perfekt Spanisch."],
+["studieren","to study (uni)","studiere / studiert","haben","studiert","studierte","Akk","","Ich studiere Biologie."],
+["teilnehmen","to take part","nehme teil / nimmt teil","haben","teilgenommen","nahm teil","an + Dat","separable, irregular","Ich habe an einem Kurs teilgenommen."],
+["treffen","to meet","treffe / trifft","haben","getroffen","traf","Akk","irregular","Ich treffe gern meine Freundinnen."],
+["umziehen","to move (house)","ziehe um / zieht um","sein","umgezogen","zog um","","separable, irregular","Ich bin letztes Jahr umgezogen."],
+["weitersuchen","to keep searching","suche weiter / sucht weiter","haben","weitergesucht","suchte weiter","Akk","separable","Ich habe immer weitergesucht."],
+["wohnen","to live (reside)","wohne / wohnt","haben","gewohnt","wohnte","","","Sie hat in Bern gewohnt."],
+["arbeiten","to work","arbeite / arbeitet","haben","gearbeitet","arbeitete","","","Ich arbeite als Softwareentwickler."],
+["bleiben","to stay","bleibe / bleibt","sein","geblieben","blieb","","irregular","Ich gehe ins Fitnessstudio, um gesund zu bleiben."],
+["entspannen","to relax (someone)","entspanne / entspannt","haben","entspannt","entspannte","Akk","","Das entspannt mich."],
+["sitzen","to sit","sitze / sitzt","haben","gesessen","saß","an + Dat","irregular","Ich sitze viele Stunden am Schreibtisch."],
+["spazieren gehen","to go for a walk","gehe spazieren / geht spazieren","sein","spazieren gegangen","ging spazieren","","irregular","Ich gehe im Park spazieren."],
+["abwaschen","to wash up","wasche ab / wäscht ab","haben","abgewaschen","wusch ab","Akk","separable, irregular","Ich wasche das Geschirr ab."],
+["anmachen","to turn on","mache an / macht an","haben","angemacht","machte an","Akk","separable","Ich mache das Licht an."],
+["anrufen","to call","rufe an / ruft an","haben","angerufen","rief an","Akk","separable, irregular","Ich rufe meine Mutter an."],
+["aufhängen","to hang up","hänge auf / hängt auf","haben","aufgehängt","hängte auf","Akk","separable","Ich hänge die Jacke auf."],
+["aufräumen","to tidy up","räume auf / räumt auf","haben","aufgeräumt","räumte auf","Akk","separable","Ich räume das Zimmer auf."],
+["aufstehen","to get up","stehe auf / steht auf","sein","aufgestanden","stand auf","","separable, irregular","Ich stehe früh auf."],
+["ausleeren","to empty","leere aus / leert aus","haben","ausgeleert","leerte aus","Akk","separable","Ich leere den Mülleimer aus."],
+["einkaufen","to shop","kaufe ein / kauft ein","haben","eingekauft","kaufte ein","","separable","Ich kaufe im Supermarkt ein."],
+["fernsehen","to watch TV","sehe fern / sieht fern","haben","ferngesehen","sah fern","","separable, irregular","Am Abend sehe ich fern."],
+["gehen um","to be about","– / geht um (es geht um)","sein","gegangen","ging um","um + Akk","irregular","Es geht um den Termin."],
+["mitbringen","to bring along","bringe mit / bringt mit","haben","mitgebracht","brachte mit","Akk","separable, irregular","Ich bringe einen Kuchen mit."],
+["umgehen mit","to deal with, handle","gehe ... um / geht ... um","sein","umgegangen","ging ... um","mit + Dat","separable, irregular","Er geht gut mit den Kindern um."],
+["verheiraten","to marry off (to be married: verheiratet sein)","verheirate / verheiratet","haben","verheiratet","verheiratete","Akk","","Sie haben ihre Tochter verheiratet."],
+["vorbereiten","to prepare","bereite vor / bereitet vor","haben","vorbereitet","bereitete vor","Akk","separable","Ich bereite das Essen vor."],
+["wehtun","to hurt","tue weh / tut weh","haben","wehgetan","tat weh","Dat","separable, irregular","Der Kopf tut mir weh."],
+["zurückkommen","to come back","komme zurück / kommt zurück","sein","zurückgekommen","kam zurück","","separable, irregular","Ich komme um 18 Uhr zurück."],
+["antworten","to answer","antworte / antwortet","haben","geantwortet","antwortete","Dat","","Er antwortet mir."],
+["bestellen","to order","bestelle / bestellt","haben","bestellt","bestellte","Akk","","An der Rezeption bestellen Sie."],
+["bezahlen","to pay","bezahle / bezahlt","haben","bezahlt","bezahlte","Akk","","Sie müssen bezahlen."],
+["brauchen","to need","brauche / braucht","haben","gebraucht","brauchte","Akk","","Wir brauchen Getränke."],
+["empfangen","to welcome","empfange / empfängt","haben","empfangen","empfing","Akk","irregular","Wir empfangen Sie am Eingang."],
+["erzählen","to tell","erzähle / erzählt","haben","erzählt","erzählte","Dat + Akk","","Erzählen Sie Ihren Freunden die Geschichte!"],
+["essen","to eat","esse / isst","haben","gegessen","aß","Akk","irregular","In der Mittagspause esse ich in der Kantine."],
+["fotografieren","to photograph","fotografiere / fotografiert","haben","fotografiert","fotografierte","Akk","","Sie dürfen nicht fotografieren."],
+["fragen","to ask","frage / fragt","haben","gefragt","fragte","Akk","","Ich frage den Mann."],
+["geben","to give","gebe / gibt","haben","gegeben","gab","Dat + Akk","irregular","Schüler wollen ein Konzert geben."],
+["gehören","to belong to","– / gehört","haben","gehört","gehörte","Dat","","Das Auto gehört dem Chef."],
+["gratulieren","to congratulate","gratuliere / gratuliert","haben","gratuliert","gratulierte","Dat","","Wir gratulieren ihr."],
+["helfen","to help","helfe / hilft","haben","geholfen","half","Dat","irregular","Ich helfe dir."],
+["hören","to hear, listen","höre / hört","haben","gehört","hörte","Akk","","Er hört oft stundenlang Musik."],
+["kaufen","to buy","kaufe / kauft","haben","gekauft","kaufte","Akk","","Sollen wir Getränke kaufen?"],
+["leihen","to borrow, lend","leihe / leiht","haben","geliehen","lieh","Akk","irregular","Sie können Bücher leihen."],
+["lieben","to love","liebe / liebt","haben","geliebt","liebte","Akk","","Ich liebe ihn."],
+["nehmen","to take","nehme / nimmt","haben","genommen","nahm","Akk","irregular","Sollst du Medizin nehmen?"],
+["passen","to fit, suit","– / passt","haben","gepasst","passte","Dat","","Die Schuhe passen der Frau gut."],
+["rauchen","to smoke","rauche / raucht","haben","geraucht","rauchte","","","Sie dürfen nicht rauchen."],
+["reservieren","to reserve","reserviere / reserviert","haben","reserviert","reservierte","Akk","","Reservieren Sie Ihre Plätze."],
+["sagen","to say, tell","sage / sagt","haben","gesagt","sagte","Dat + Akk","","Wir sagen Ihnen den Namen."],
+["schenken","to give (a gift)","schenke / schenkt","haben","geschenkt","schenkte","Dat + Akk","","Ich habe meinem Bruder eine CD geschenkt."],
+["schlafen","to sleep","schlafe / schläft","haben","geschlafen","schlief","","irregular","Soll ich schlafen?"],
+["schmecken","to taste (good)","– / schmeckt","haben","geschmeckt","schmeckte","Dat","","Der Wein schmeckt dem Mann nicht."],
+["sehen","to see","sehe / sieht","haben","gesehen","sah","Akk","irregular","Ich möchte den neuen Film sehen."],
+["stehen","to suit (clothes); to stand","stehe / steht","haben","gestanden","stand","Dat","irregular","Die Jacke steht dem Mädchen nicht gut."],
+["telefonieren","to phone","telefoniere / telefoniert","haben","telefoniert","telefonierte","","","Sie dürfen nicht telefonieren."],
+["tragen","to wear, carry","trage / trägt","haben","getragen","trug","Akk","irregular","Sie müssen Ihre Brille tragen."],
+["trinken","to drink","trinke / trinkt","haben","getrunken","trank","Akk","irregular","Sie müssen viel trinken."],
+["zeigen","to show","zeige / zeigt","haben","gezeigt","zeigte","Dat + Akk","","Sie müssen Ihren Bibliotheksausweis zeigen."],
+["zuhören","to listen to","höre zu / hört zu","haben","zugehört","hörte zu","Dat","separable","Die Kinder hören ihm zu."],
+["ausprobieren","to try out","probiere aus / probiert aus","haben","ausprobiert","probierte aus","Akk","separable","Man kann Produkte ausprobieren."],
+["stärken","to strengthen","stärke / stärkt","haben","gestärkt","stärkte","Akk","","Ihr stärkt die lokale Wirtschaft."],
+["unterstützen","to support","unterstütze / unterstützt","haben","unterstützt","unterstützte","Akk","","Ihr unterstützt die Gemeinschaft."]
+];
+var P=["ich","du","er/sie/es","wir","ihr","sie/Sie"];
+var M=[
+["dürfen","may, to be allowed to",["darf","darfst","darf","dürfen","dürft","dürfen"],["Ich darf heute länger schlafen.","Du darfst hier parken.","Er darf nicht rauchen.","Wir dürfen heute früher gehen.","Ihr dürft jetzt nach Hause gehen.","Sie dürfen hier nicht fotografieren."]],
+["können","can, to be able to",["kann","kannst","kann","können","könnt","können"],["Ich kann Deutsch und Englisch sprechen.","Du kannst gut kochen.","Sie kann sehr gut Spanisch.","Wir können morgen kommen.","Ihr könnt mir helfen.","Sie können mich anrufen."]],
+["mögen","to like",["mag","magst","mag","mögen","mögt","mögen"],["Ich mag die Tiere sehr.","Du magst Kaffee.","Er mag den Hund.","Wir mögen die Stadt.","Ihr mögt Pizza, oder?","Sie mögen Musik."]],
+["möchten","would like to",["möchte","möchtest","möchte","möchten","möchtet","möchten"],["Ich möchte ein Wasser, bitte.","Du möchtest bestimmt einen Kaffee.","Der Chef möchte mit Ihnen sprechen.","Wir möchten einen Tisch reservieren.","Möchtet ihr etwas essen?","Sie möchten bald umziehen."]],
+["müssen","must, to have to",["muss","musst","muss","müssen","müsst","müssen"],["Ich muss heute lange arbeiten.","Du musst mehr Wasser trinken.","Er muss zum Chef gehen.","Wir müssen jetzt gehen.","Ihr müsst die Hausaufgaben machen.","Sie müssen den Termin bestätigen."]],
+["sollen","should, to be supposed to",["soll","sollst","soll","sollen","sollt","sollen"],["Ich soll morgen früher kommen.","Du sollst Anastasia anrufen.","Er soll das Fest organisieren.","Wir sollen heute lernen.","Ihr sollt leise sein.","Sie sollen das Formular ausfüllen."]],
+["wollen","to want to",["will","willst","will","wollen","wollt","wollen"],["Ich will Deutsch lernen.","Du willst ins Fitnessstudio gehen.","Sie will Spanisch lernen.","Wir wollen heute ins Theater gehen.","Ihr wollt ins Restaurant gehen.","Sie wollen im Park spazieren gehen."]]
+];
+var T={"dürfen":["durfte","hat gedurft"],"können":["konnte","hat gekonnt"],"mögen":["mochte","hat gemocht"],"möchten":["– (wollte)","–"],"müssen":["musste","hat gemusst"],"sollen":["sollte","hat gesollt"],"wollen":["wollte","hat gewollt"]};
+function modals(){
+ var h="<p class='meta'>Modal verb in position 2, the other verb as an infinitive at the end: <i>Ich <b>kann</b> Deutsch <b>sprechen</b>.</i></p><div class='wrap'><table><tr><th>Verb</th><th>Meaning</th>"+P.map(function(x){return"<th>"+x+"</th>"}).join("")+"<th>Präteritum (ich/er)</th><th>Perfekt</th></tr>";
+ M.forEach(function(m){h+="<tr><td><b>"+m[0]+"</b></td><td>"+m[1]+"</td>"+m[2].map(function(f){return"<td>"+f+"</td>"}).join("")+"<td>"+T[m[0]][0]+"</td><td>"+T[m[0]][1]+"</td></tr>"});
+ h+="</table></div>";
+ M.forEach(function(m){
+  h+="<h2>"+m[0]+"</h2><div class='wrap'><table><tr><th>Person</th><th>Example</th></tr>";
+  m[3].forEach(function(e,i){h+="<tr><td>"+P[i]+" <b>"+m[2][i]+"</b></td><td>"+e+"</td></tr>"});
+  h+="</table></div>";
+ });
+ return [h,M.length,M.length];
+}
+var tab="Nouns",fc="All",fa="All",fg="All",fk="All";
+function srt(a,b){return a[1].localeCompare(b[1],"de")}
+function bar(){
+ var t="";["Nouns","Verbs","Modals"].forEach(function(x){t+="<button class='"+(x===tab?"on":"")+"' data-t='"+x+"'>"+x+"</button> "});
+ var groups=tab==="Modals"?[]:tab==="Nouns"?[["c",["All","Akk","Dat","Gen"],fc]]:[["a",["All","haben","sein"],fa],["g",["All","irregular","separable","reflexive"],fg],["k",["All","Akk","Dat"],fk]];
+ var f="";
+ groups.forEach(function(g,i){
+  if(i)f+="<span class='sep'></span>";
+  g[1].forEach(function(x){f+="<button class='"+(x===g[2]?"on":"")+"' data-k='"+g[0]+"' data-f='"+x+"'>"+x+"</button> "});
+ });
+ document.getElementById("tabs").innerHTML=t;document.getElementById("filters").innerHTML=f;
+ document.querySelectorAll("[data-t]").forEach(function(b){b.onclick=function(){tab=b.dataset.t;bar();render()}});
+ document.querySelectorAll("[data-f]").forEach(function(b){b.onclick=function(){var k=b.dataset.k,v=b.dataset.f;if(k==="c")fc=v;else if(k==="a")fa=v;else if(k==="g")fg=v;else fk=v;bar();render()}});
+}
+function nouns(){
+ var G=[["der","der (masculine)","Often der: days, months, seasons (der Juni, der Herbst) and many words from verbs (der Kurs, der Spaß)."],
+ ["die","die (feminine and plural)","Always die: -ung, -heit, -keit, -ion, -in (female persons), most words ending in -e. Plural nouns use die in Nominativ and Akkusativ; Dativ plural is den + noun-n."],
+ ["das","das (neuter)","Often das: -um, -chen, -lein, -ment, and verbs used as nouns (das Leben)."]];
+ var h="",n=0;
+ G.forEach(function(g){
+  var r=N.filter(function(w){return w[0]===g[0]&&(fc==="All"||w[3]===fc)}).sort(srt);n+=r.length;
+  h+="<h2>"+g[1]+" ("+r.length+")</h2><p class='meta'>"+g[2]+"</p>";
+  if(!r.length)return;
+  h+="<div class='wrap'><table><tr><th>Word</th><th>Plural</th><th>Case</th><th>Meaning</th><th>Example</th></tr>";
+  r.forEach(function(w){h+="<tr><td><b>"+w[0]+" "+w[1]+"</b></td><td>"+w[2]+"</td><td><span class='b "+w[3]+"'>"+w[3]+"</span></td><td>"+w[4]+"</td><td>"+w[5]+"</td></tr>"});
+  h+="</table></div>";
+ });
+ if(fc==="Gen")h+="<p class='meta'>No Genitiv words collected yet.</p>";
+ return [h,n,N.length];
+}
+function verbs(){
+ var r=V.filter(function(v){return (fa==="All"||v[3]===fa)&&(fg==="All"||v[7].indexOf(fg)>-1)&&(fk==="All"||v[6].indexOf(fk)>-1)}).sort(function(a,b){return a[0].replace("sich ","").localeCompare(b[0].replace("sich ",""),"de")});
+ var h=(r.length?"":"<p class='meta'>No verbs match these filters.</p>")+"<p class='meta'>Perfekt = helper verb + participle. Orange = uses <b>sein</b> (movement or change of state). Präteritum is given for er/sie/es.</p><div class='wrap'><table><tr><th>Infinitive</th><th>Meaning</th><th>Präsens (ich / er)</th><th>Perfekt</th><th>Präteritum</th><th>Takes</th><th>Example</th></tr>";
+ r.forEach(function(v){
+  var tags=v[7]?v[7].split(", ").map(function(t){return"<span class='b'>"+t+"</span>"}).join(""):"";
+  h+="<tr><td><b>"+v[0]+"</b><br>"+tags+"</td><td>"+v[1]+"</td><td>"+v[2]+"</td><td><span class='b "+(v[3]==="sein"?"sein":"")+"'>"+v[3]+"</span> "+v[4]+"</td><td>"+v[5]+"</td><td>"+(v[6]?"<span class='b "+(v[6].indexOf("Dat")>-1&&v[6].indexOf("Akk")<0?"Dat":v[6]==="Akk"?"Akk":"")+"'>"+v[6]+"</span>":"–")+"</td><td>"+v[8]+"</td></tr>";
+ });
+ return [h+"</table></div>",r.length,V.length];
+}
+function render(){
+ var o=tab==="Nouns"?nouns():tab==="Modals"?modals():verbs();
+ document.getElementById("out").innerHTML=o[0];
+ document.getElementById("count").textContent=tab+": "+o[1]+" of "+o[2]+" shown";
+}
+bar();render();
+</script>
+</body>
+</html>

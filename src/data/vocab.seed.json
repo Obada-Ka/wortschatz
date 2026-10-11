@@ -1,0 +1,2780 @@
+{
+  "version": 1,
+  "nouns": [
+    {
+      "article": "der",
+      "word": "Herbst",
+      "plural": "Herbste",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "autumn",
+      "example": "Im Herbst habe ich mein Studium angefangen."
+    },
+    {
+      "article": "der",
+      "word": "Juni",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "June",
+      "example": "Im Juni habe ich meine Prüfungen geschrieben."
+    },
+    {
+      "article": "der",
+      "word": "August",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "August",
+      "example": "Im August hat meine Schwester geheiratet."
+    },
+    {
+      "article": "der",
+      "word": "Kurs",
+      "plural": "Kurse",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "course",
+      "example": "Ich habe an einem Kurs teilgenommen."
+    },
+    {
+      "article": "der",
+      "word": "Spaß",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "fun",
+      "example": "Es macht wirklich Spaß."
+    },
+    {
+      "article": "der",
+      "word": "Sport",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "sport",
+      "example": "Ich mache auch gern Sport."
+    },
+    {
+      "article": "der",
+      "word": "Verein",
+      "plural": "Vereine",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "club",
+      "example": "Ich melde mich bald in einem Verein an."
+    },
+    {
+      "article": "der",
+      "word": "Freund",
+      "plural": "Freunde",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "friend (m)",
+      "example": "Wir haben auch Lillys Freunde in Madrid besucht."
+    },
+    {
+      "article": "die",
+      "word": "Ausbildung",
+      "plural": "Ausbildungen",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "training",
+      "example": "Ich habe meine Ausbildung beendet."
+    },
+    {
+      "article": "die",
+      "word": "Augenoptikerin",
+      "plural": "Augenoptikerinnen",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "optician (f)",
+      "example": "Meine Ausbildung zur Augenoptikerin."
+    },
+    {
+      "article": "die",
+      "word": "Freundin",
+      "plural": "Freundinnen",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "friend (f), girlfriend",
+      "example": "Ich bin mit einer Freundin nach Spanien geflogen."
+    },
+    {
+      "article": "die",
+      "word": "Muttersprache",
+      "plural": "Muttersprachen",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "mother tongue",
+      "example": "Ich habe zwei Muttersprachen."
+    },
+    {
+      "article": "die",
+      "word": "Note",
+      "plural": "Noten",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "grade",
+      "example": "Ich habe gute Noten bekommen."
+    },
+    {
+      "article": "die",
+      "word": "Prüfung",
+      "plural": "Prüfungen",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "exam",
+      "example": "Ich habe meine Prüfungen geschrieben."
+    },
+    {
+      "article": "die",
+      "word": "Stadt",
+      "plural": "Städte",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "city",
+      "example": "Uns gefällt das Leben in der Stadt."
+    },
+    {
+      "article": "die",
+      "word": "Wohnung",
+      "plural": "Wohnungen",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "flat",
+      "example": "Ich habe keine Wohnung gefunden."
+    },
+    {
+      "article": "die",
+      "word": "Woche",
+      "plural": "Wochen",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "week",
+      "example": "Wir sind drei Wochen lang gefahren."
+    },
+    {
+      "article": "die",
+      "word": "Leute",
+      "plural": null,
+      "pluralOnly": true,
+      "case": "Akk",
+      "meaning": "people",
+      "example": "Wir haben schon viele Leute kennengelernt."
+    },
+    {
+      "article": "das",
+      "word": "Apartment",
+      "plural": "Apartments",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "apartment",
+      "example": "Ich habe ein Apartment im Zentrum."
+    },
+    {
+      "article": "das",
+      "word": "Auto",
+      "plural": "Autos",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "car",
+      "example": "Wir haben ein Auto gemietet."
+    },
+    {
+      "article": "das",
+      "word": "Buch",
+      "plural": "Bücher",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "book",
+      "example": "Ein gutes Buch lesen."
+    },
+    {
+      "article": "das",
+      "word": "Fest",
+      "plural": "Feste",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "party, celebration",
+      "example": "Ich habe das Fest organisiert."
+    },
+    {
+      "article": "das",
+      "word": "Glück",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "luck",
+      "example": "Zum Glück habe ich gute Noten bekommen."
+    },
+    {
+      "article": "das",
+      "word": "Hobby",
+      "plural": "Hobbys",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "hobby",
+      "example": "Ich habe ein neues Hobby."
+    },
+    {
+      "article": "das",
+      "word": "Jahr",
+      "plural": "Jahre",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "year",
+      "example": "Ich bin letztes Jahr umgezogen."
+    },
+    {
+      "article": "das",
+      "word": "Land",
+      "plural": "Länder",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "country",
+      "example": "Wir sind durch das Land gefahren."
+    },
+    {
+      "article": "das",
+      "word": "Pferd",
+      "plural": "Pferde",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "horse",
+      "example": "Meine Eltern haben ein Pferd."
+    },
+    {
+      "article": "das",
+      "word": "Restaurant",
+      "plural": "Restaurants",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "restaurant",
+      "example": "Wir gehen ins Restaurant."
+    },
+    {
+      "article": "das",
+      "word": "Sofa",
+      "plural": "Sofas",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "sofa",
+      "example": "Am Wochenende auf dem Sofa liegen."
+    },
+    {
+      "article": "das",
+      "word": "Stadtzentrum",
+      "plural": "Stadtzentren",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "city centre",
+      "example": "Wir haben ein Apartment im Stadtzentrum."
+    },
+    {
+      "article": "das",
+      "word": "Studium",
+      "plural": "Studien",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "studies",
+      "example": "Ich habe mein Studium angefangen."
+    },
+    {
+      "article": "das",
+      "word": "Wochenende",
+      "plural": "Wochenenden",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "weekend",
+      "example": "Am Wochenende liege ich auf dem Sofa."
+    },
+    {
+      "article": "das",
+      "word": "Zentrum",
+      "plural": "Zentren",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "centre",
+      "example": "Ich habe ein Apartment im Zentrum."
+    },
+    {
+      "article": "der",
+      "word": "Park",
+      "plural": "Parks",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "park",
+      "example": "Manchmal gehe ich im Park spazieren."
+    },
+    {
+      "article": "der",
+      "word": "Schreibtisch",
+      "plural": "Schreibtische",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "desk",
+      "example": "Ich sitze viele Stunden am Schreibtisch."
+    },
+    {
+      "article": "die",
+      "word": "Freizeit",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "free time",
+      "example": "In meiner Freizeit spiele ich gern online."
+    },
+    {
+      "article": "die",
+      "word": "Stunde",
+      "plural": "Stunden",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "hour",
+      "example": "Ich sitze viele Stunden am Schreibtisch."
+    },
+    {
+      "article": "das",
+      "word": "Fitnessstudio",
+      "plural": "Fitnessstudios",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "gym",
+      "example": "Ich gehe ins Fitnessstudio."
+    },
+    {
+      "article": "der",
+      "word": "Abend",
+      "plural": "Abende",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "evening",
+      "example": "Chris spielt am Abend gerne Gitarre."
+    },
+    {
+      "article": "der",
+      "word": "Arzt",
+      "plural": "Ärzte",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "doctor",
+      "example": "Sie muss zum Arzt gehen."
+    },
+    {
+      "article": "der",
+      "word": "Beruf",
+      "plural": "Berufe",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "job",
+      "example": "Was ist sie von Beruf?"
+    },
+    {
+      "article": "der",
+      "word": "Besuch",
+      "plural": "Besuche",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "visit",
+      "example": "Reservieren Sie vor Ihrem Besuch."
+    },
+    {
+      "article": "der",
+      "word": "Bibliotheksausweis",
+      "plural": "Bibliotheksausweise",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "library card",
+      "example": "Sie müssen Ihren Bibliotheksausweis zeigen."
+    },
+    {
+      "article": "der",
+      "word": "Bruder",
+      "plural": "Brüder",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "brother",
+      "example": "Ich habe meinem Bruder eine CD geschenkt."
+    },
+    {
+      "article": "der",
+      "word": "Eingang",
+      "plural": "Eingänge",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "entrance",
+      "example": "Wir empfangen Sie am Eingang."
+    },
+    {
+      "article": "der",
+      "word": "Film",
+      "plural": "Filme",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "film",
+      "example": "Ich möchte den neuen Film sehen."
+    },
+    {
+      "article": "der",
+      "word": "Geburtstag",
+      "plural": "Geburtstage",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "birthday",
+      "example": "Ich bringe zum Geburtstag einen Kuchen mit."
+    },
+    {
+      "article": "der",
+      "word": "Kellner",
+      "plural": "Kellner",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "waiter",
+      "example": "Wir sagen Ihnen den Namen vom Kellner."
+    },
+    {
+      "article": "der",
+      "word": "Kuchen",
+      "plural": "Kuchen",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "cake",
+      "example": "Ich bringe einen Kuchen mit."
+    },
+    {
+      "article": "der",
+      "word": "Marktplatz",
+      "plural": "Marktplätze",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "market square",
+      "example": "Eine Band hat auf dem Marktplatz gespielt."
+    },
+    {
+      "article": "der",
+      "word": "Montag",
+      "plural": "Montage",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "Monday",
+      "example": "Ich fahre jeden Montag nach Frankfurt."
+    },
+    {
+      "article": "der",
+      "word": "Name",
+      "plural": "Namen",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "name",
+      "example": "Wir sagen Ihnen den Namen."
+    },
+    {
+      "article": "der",
+      "word": "Platz",
+      "plural": "Plätze",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "seat, place",
+      "example": "Wie bekomme ich einen Platz?"
+    },
+    {
+      "article": "der",
+      "word": "Salat",
+      "plural": "Salate",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "salad",
+      "example": "Sie müssen Salat essen."
+    },
+    {
+      "article": "der",
+      "word": "Samstagabend",
+      "plural": "Samstagabende",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "Saturday evening",
+      "example": "Am Samstagabend sind sie ins Theater gegangen."
+    },
+    {
+      "article": "der",
+      "word": "Sommer",
+      "plural": "Sommer",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "summer",
+      "example": "Im Sommer möchte Chris Urlaub machen."
+    },
+    {
+      "article": "der",
+      "word": "Sonntag",
+      "plural": "Sonntage",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "Sunday",
+      "example": "Am Sonntag haben sie in einem Restaurant gegessen."
+    },
+    {
+      "article": "der",
+      "word": "Termin",
+      "plural": "Termine",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "appointment",
+      "example": "Sie bekommen vor dem Termin eine Nachricht."
+    },
+    {
+      "article": "der",
+      "word": "Urlaub",
+      "plural": "Urlaube",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "holiday",
+      "example": "Chris möchte Urlaub machen."
+    },
+    {
+      "article": "die",
+      "word": "Bibliothek",
+      "plural": "Bibliotheken",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "library",
+      "example": "In der Bibliothek können Sie Bücher leihen."
+    },
+    {
+      "article": "die",
+      "word": "Brille",
+      "plural": "Brillen",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "glasses",
+      "example": "Sie müssen Ihre Brille tragen."
+    },
+    {
+      "article": "die",
+      "word": "CD",
+      "plural": "CDs",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "CD",
+      "example": "Ich habe meinem Bruder eine CD geschenkt."
+    },
+    {
+      "article": "die",
+      "word": "Cousine",
+      "plural": "Cousinen",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "cousin (f)",
+      "example": "Ich wohne bei meiner Cousine."
+    },
+    {
+      "article": "die",
+      "word": "Dunkelheit",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "darkness",
+      "example": "Ich mag die Dunkelheit nicht."
+    },
+    {
+      "article": "die",
+      "word": "Geschichte",
+      "plural": "Geschichten",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "story",
+      "example": "Hören Sie die Geschichte!"
+    },
+    {
+      "article": "die",
+      "word": "Gitarre",
+      "plural": "Gitarren",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "guitar",
+      "example": "Chris spielt am Abend gerne Gitarre."
+    },
+    {
+      "article": "die",
+      "word": "Hausaufgabe",
+      "plural": "Hausaufgaben",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "homework",
+      "example": "Sie wollen oft keine Hausaufgaben machen."
+    },
+    {
+      "article": "die",
+      "word": "Heizung",
+      "plural": "Heizungen",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "heating",
+      "example": "Sollen wir die Heizung anmachen?"
+    },
+    {
+      "article": "die",
+      "word": "Kantine",
+      "plural": "Kantinen",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "canteen",
+      "example": "Ich esse in der Kantine."
+    },
+    {
+      "article": "die",
+      "word": "Kopfschmerzen",
+      "plural": null,
+      "pluralOnly": true,
+      "case": "Akk",
+      "meaning": "headache",
+      "example": "Ich habe Kopfschmerzen."
+    },
+    {
+      "article": "die",
+      "word": "Medizin",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "medicine",
+      "example": "Sollst du Medizin nehmen?"
+    },
+    {
+      "article": "die",
+      "word": "Mittagspause",
+      "plural": "Mittagspausen",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "lunch break",
+      "example": "In der Mittagspause esse ich in der Kantine."
+    },
+    {
+      "article": "die",
+      "word": "Musik",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "music",
+      "example": "Er hört oft stundenlang Musik."
+    },
+    {
+      "article": "die",
+      "word": "Mutter",
+      "plural": "Mütter",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "mother",
+      "example": "Susi sagt zu ihrer Mutter: …"
+    },
+    {
+      "article": "die",
+      "word": "Nachricht",
+      "plural": "Nachrichten",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "message",
+      "example": "Sie bekommen eine Nachricht."
+    },
+    {
+      "article": "die",
+      "word": "Rechnung",
+      "plural": "Rechnungen",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "bill",
+      "example": "Sie bekommen Ihre Rechnung."
+    },
+    {
+      "article": "die",
+      "word": "Rezeption",
+      "plural": "Rezeptionen",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "reception",
+      "example": "An der Rezeption bestellen Sie."
+    },
+    {
+      "article": "die",
+      "word": "Schule",
+      "plural": "Schulen",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "school",
+      "example": "Ich muss nicht in die Schule gehen."
+    },
+    {
+      "article": "die",
+      "word": "Speisekarte",
+      "plural": "Speisekarten",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "menu",
+      "example": "Sie bestellen aus unserer Speisekarte."
+    },
+    {
+      "article": "die",
+      "word": "Uhr",
+      "plural": "Uhren",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "o'clock",
+      "example": "Ich fahre freitags um 17 Uhr nach Heidelberg."
+    },
+    {
+      "article": "die",
+      "word": "Welt",
+      "plural": "Welten",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "world",
+      "example": "Sie lernen eine andere Welt kennen."
+    },
+    {
+      "article": "das",
+      "word": "Bett",
+      "plural": "Betten",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "bed",
+      "example": "Du musst im Bett bleiben."
+    },
+    {
+      "article": "das",
+      "word": "Bild",
+      "plural": "Bilder",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "picture",
+      "example": "Im Museum können Sie Bilder sehen."
+    },
+    {
+      "article": "das",
+      "word": "Büro",
+      "plural": "Büros",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "office",
+      "example": "Ich arbeite im Büro."
+    },
+    {
+      "article": "das",
+      "word": "Essen",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "food, meal",
+      "example": "Ich möchte mein Essen sehen."
+    },
+    {
+      "article": "das",
+      "word": "Getränk",
+      "plural": "Getränke",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "drink",
+      "example": "Sollen wir Getränke kaufen?"
+    },
+    {
+      "article": "das",
+      "word": "Kino",
+      "plural": "Kinos",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "cinema",
+      "example": "Sollen wir zusammen ins Kino gehen?"
+    },
+    {
+      "article": "das",
+      "word": "Konzert",
+      "plural": "Konzerte",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "concert",
+      "example": "Schüler wollen ein Konzert geben."
+    },
+    {
+      "article": "das",
+      "word": "Licht",
+      "plural": "Lichter",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "light",
+      "example": "Man geht mit Licht zum Platz."
+    },
+    {
+      "article": "das",
+      "word": "Museum",
+      "plural": "Museen",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "museum",
+      "example": "Im Museum können Sie Bilder sehen."
+    },
+    {
+      "article": "das",
+      "word": "Theater",
+      "plural": "Theater",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "theatre",
+      "example": "Sie sind ins Theater gegangen."
+    },
+    {
+      "article": "das",
+      "word": "Wasser",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "water",
+      "example": "Sie müssen viel Wasser trinken."
+    },
+    {
+      "article": "der",
+      "word": "Einkauf",
+      "plural": "Einkäufe",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "purchase, shopping",
+      "example": "Durch den Einkauf in lokalen Geschäften unterstützt ihr die Gemeinschaft."
+    },
+    {
+      "article": "die",
+      "word": "Gemeinschaft",
+      "plural": "Gemeinschaften",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "community",
+      "example": "Ihr unterstützt die Gemeinschaft."
+    },
+    {
+      "article": "das",
+      "word": "Geschäft",
+      "plural": "Geschäfte",
+      "pluralOnly": false,
+      "case": "Dat",
+      "meaning": "shop, store",
+      "example": "Rückgaben sind oft einfacher im Geschäft."
+    },
+    {
+      "article": "das",
+      "word": "Produkt",
+      "plural": "Produkte",
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "product",
+      "example": "Man kann Produkte ausprobieren."
+    },
+    {
+      "article": "die",
+      "word": "Wirtschaft",
+      "plural": null,
+      "pluralOnly": false,
+      "case": "Akk",
+      "meaning": "economy",
+      "example": "Ihr stärkt die lokale Wirtschaft."
+    }
+  ],
+  "verbs": [
+    {
+      "infinitive": "anfangen",
+      "meaning": "to begin",
+      "present": {
+        "ich": "fange an",
+        "er": "fängt an"
+      },
+      "auxiliary": "haben",
+      "participle": "angefangen",
+      "preterite": "fing an",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable",
+        "irregular"
+      ],
+      "example": "Ich habe mein Studium angefangen."
+    },
+    {
+      "infinitive": "sich anmelden",
+      "meaning": "to sign up",
+      "present": {
+        "ich": "melde mich an",
+        "er": "meldet sich an"
+      },
+      "auxiliary": "haben",
+      "participle": "angemeldet",
+      "preterite": "meldete sich an",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": [
+            "in"
+          ]
+        }
+      ],
+      "tags": [
+        "separable",
+        "reflexive"
+      ],
+      "example": "Ich melde mich in einem Verein an."
+    },
+    {
+      "infinitive": "beenden",
+      "meaning": "to finish",
+      "present": {
+        "ich": "beende",
+        "er": "beendet"
+      },
+      "auxiliary": "haben",
+      "participle": "beendet",
+      "preterite": "beendete",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Ich habe meine Ausbildung beendet."
+    },
+    {
+      "infinitive": "bekommen",
+      "meaning": "to get",
+      "present": {
+        "ich": "bekomme",
+        "er": "bekommt"
+      },
+      "auxiliary": "haben",
+      "participle": "bekommen",
+      "preterite": "bekam",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Ich habe gute Noten bekommen."
+    },
+    {
+      "infinitive": "besuchen",
+      "meaning": "to visit",
+      "present": {
+        "ich": "besuche",
+        "er": "besucht"
+      },
+      "auxiliary": "haben",
+      "participle": "besucht",
+      "preterite": "besuchte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Wir haben Lillys Freunde besucht."
+    },
+    {
+      "infinitive": "feiern",
+      "meaning": "to celebrate",
+      "present": {
+        "ich": "feiere",
+        "er": "feiert"
+      },
+      "auxiliary": "haben",
+      "participle": "gefeiert",
+      "preterite": "feierte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Wir haben zusammen gefeiert."
+    },
+    {
+      "infinitive": "finden",
+      "meaning": "to find",
+      "present": {
+        "ich": "finde",
+        "er": "findet"
+      },
+      "auxiliary": "haben",
+      "participle": "gefunden",
+      "preterite": "fand",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Ich habe keine Wohnung gefunden."
+    },
+    {
+      "infinitive": "fahren",
+      "meaning": "to drive, travel",
+      "present": {
+        "ich": "fahre",
+        "er": "fährt"
+      },
+      "auxiliary": "sein",
+      "participle": "gefahren",
+      "preterite": "fuhr",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": [
+            "durch"
+          ]
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Wir sind durch das Land gefahren."
+    },
+    {
+      "infinitive": "fliegen",
+      "meaning": "to fly",
+      "present": {
+        "ich": "fliege",
+        "er": "fliegt"
+      },
+      "auxiliary": "sein",
+      "participle": "geflogen",
+      "preterite": "flog",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": [
+            "nach"
+          ]
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Ich bin nach Spanien geflogen."
+    },
+    {
+      "infinitive": "gefallen",
+      "meaning": "to please, be liked",
+      "present": {
+        "ich": "gefalle",
+        "er": "gefällt"
+      },
+      "auxiliary": "haben",
+      "participle": "gefallen",
+      "preterite": "gefiel",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Das hat mir gleich gefallen."
+    },
+    {
+      "infinitive": "gehen",
+      "meaning": "to go",
+      "present": {
+        "ich": "gehe",
+        "er": "geht"
+      },
+      "auxiliary": "sein",
+      "participle": "gegangen",
+      "preterite": "ging",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": [
+            "in"
+          ]
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Wir gehen ins Restaurant."
+    },
+    {
+      "infinitive": "heiraten",
+      "meaning": "to marry",
+      "present": {
+        "ich": "heirate",
+        "er": "heiratet"
+      },
+      "auxiliary": "haben",
+      "participle": "geheiratet",
+      "preterite": "heiratete",
+      "takes": [],
+      "tags": [],
+      "example": "Meine Schwester hat geheiratet."
+    },
+    {
+      "infinitive": "kennenlernen",
+      "meaning": "to get to know",
+      "present": {
+        "ich": "lerne kennen",
+        "er": "lernt kennen"
+      },
+      "auxiliary": "haben",
+      "participle": "kennengelernt",
+      "preterite": "lernte kennen",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable"
+      ],
+      "example": "Wir haben viele Leute kennengelernt."
+    },
+    {
+      "infinitive": "kochen",
+      "meaning": "to cook",
+      "present": {
+        "ich": "koche",
+        "er": "kocht"
+      },
+      "auxiliary": "haben",
+      "participle": "gekocht",
+      "preterite": "kochte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Dann kochen wir zusammen."
+    },
+    {
+      "infinitive": "kommen",
+      "meaning": "to come",
+      "present": {
+        "ich": "komme",
+        "er": "kommt"
+      },
+      "auxiliary": "sein",
+      "participle": "gekommen",
+      "preterite": "kam",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": [
+            "aus",
+            "nach"
+          ]
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Viele Freunde sind gekommen."
+    },
+    {
+      "infinitive": "leben",
+      "meaning": "to live",
+      "present": {
+        "ich": "lebe",
+        "er": "lebt"
+      },
+      "auxiliary": "haben",
+      "participle": "gelebt",
+      "preterite": "lebte",
+      "takes": [],
+      "tags": [],
+      "example": "Lilly hat früher dort gelebt."
+    },
+    {
+      "infinitive": "lernen",
+      "meaning": "to learn",
+      "present": {
+        "ich": "lerne",
+        "er": "lernt"
+      },
+      "auxiliary": "haben",
+      "participle": "gelernt",
+      "preterite": "lernte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Ich habe sehr viel gelernt."
+    },
+    {
+      "infinitive": "lesen",
+      "meaning": "to read",
+      "present": {
+        "ich": "lese",
+        "er": "liest"
+      },
+      "auxiliary": "haben",
+      "participle": "gelesen",
+      "preterite": "las",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Ein gutes Buch lesen."
+    },
+    {
+      "infinitive": "machen",
+      "meaning": "to do, make",
+      "present": {
+        "ich": "mache",
+        "er": "macht"
+      },
+      "auxiliary": "haben",
+      "participle": "gemacht",
+      "preterite": "machte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Es macht wirklich Spaß."
+    },
+    {
+      "infinitive": "mieten",
+      "meaning": "to rent",
+      "present": {
+        "ich": "miete",
+        "er": "mietet"
+      },
+      "auxiliary": "haben",
+      "participle": "gemietet",
+      "preterite": "mietete",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Wir haben ein Auto gemietet."
+    },
+    {
+      "infinitive": "organisieren",
+      "meaning": "to organise",
+      "present": {
+        "ich": "organisiere",
+        "er": "organisiert"
+      },
+      "auxiliary": "haben",
+      "participle": "organisiert",
+      "preterite": "organisierte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Ich habe das Fest organisiert."
+    },
+    {
+      "infinitive": "passieren",
+      "meaning": "to happen",
+      "present": {
+        "ich": "–",
+        "er": "passiert"
+      },
+      "auxiliary": "sein",
+      "participle": "passiert",
+      "preterite": "passierte",
+      "takes": [],
+      "tags": [],
+      "example": "Es ist viel passiert."
+    },
+    {
+      "infinitive": "renovieren",
+      "meaning": "to renovate",
+      "present": {
+        "ich": "renoviere",
+        "er": "renoviert"
+      },
+      "auxiliary": "haben",
+      "participle": "renoviert",
+      "preterite": "renovierte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Wir haben es zusammen renoviert."
+    },
+    {
+      "infinitive": "schreiben",
+      "meaning": "to write",
+      "present": {
+        "ich": "schreibe",
+        "er": "schreibt"
+      },
+      "auxiliary": "haben",
+      "participle": "geschrieben",
+      "preterite": "schrieb",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Ich habe meine Prüfungen geschrieben."
+    },
+    {
+      "infinitive": "spielen",
+      "meaning": "to play",
+      "present": {
+        "ich": "spiele",
+        "er": "spielt"
+      },
+      "auxiliary": "haben",
+      "participle": "gespielt",
+      "preterite": "spielte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Ich spiele Tennis."
+    },
+    {
+      "infinitive": "sprechen",
+      "meaning": "to speak",
+      "present": {
+        "ich": "spreche",
+        "er": "spricht"
+      },
+      "auxiliary": "haben",
+      "participle": "gesprochen",
+      "preterite": "sprach",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Lilly spricht perfekt Spanisch."
+    },
+    {
+      "infinitive": "studieren",
+      "meaning": "to study (uni)",
+      "present": {
+        "ich": "studiere",
+        "er": "studiert"
+      },
+      "auxiliary": "haben",
+      "participle": "studiert",
+      "preterite": "studierte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Ich studiere Biologie."
+    },
+    {
+      "infinitive": "teilnehmen",
+      "meaning": "to take part",
+      "present": {
+        "ich": "nehme teil",
+        "er": "nimmt teil"
+      },
+      "auxiliary": "haben",
+      "participle": "teilgenommen",
+      "preterite": "nahm teil",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": [
+            "an"
+          ]
+        }
+      ],
+      "tags": [
+        "separable",
+        "irregular"
+      ],
+      "example": "Ich habe an einem Kurs teilgenommen."
+    },
+    {
+      "infinitive": "treffen",
+      "meaning": "to meet",
+      "present": {
+        "ich": "treffe",
+        "er": "trifft"
+      },
+      "auxiliary": "haben",
+      "participle": "getroffen",
+      "preterite": "traf",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Ich treffe gern meine Freundinnen."
+    },
+    {
+      "infinitive": "umziehen",
+      "meaning": "to move (house)",
+      "present": {
+        "ich": "ziehe um",
+        "er": "zieht um"
+      },
+      "auxiliary": "sein",
+      "participle": "umgezogen",
+      "preterite": "zog um",
+      "takes": [],
+      "tags": [
+        "separable",
+        "irregular"
+      ],
+      "example": "Ich bin letztes Jahr umgezogen."
+    },
+    {
+      "infinitive": "weitersuchen",
+      "meaning": "to keep searching",
+      "present": {
+        "ich": "suche weiter",
+        "er": "sucht weiter"
+      },
+      "auxiliary": "haben",
+      "participle": "weitergesucht",
+      "preterite": "suchte weiter",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable"
+      ],
+      "example": "Ich habe immer weitergesucht."
+    },
+    {
+      "infinitive": "wohnen",
+      "meaning": "to live (reside)",
+      "present": {
+        "ich": "wohne",
+        "er": "wohnt"
+      },
+      "auxiliary": "haben",
+      "participle": "gewohnt",
+      "preterite": "wohnte",
+      "takes": [],
+      "tags": [],
+      "example": "Sie hat in Bern gewohnt."
+    },
+    {
+      "infinitive": "arbeiten",
+      "meaning": "to work",
+      "present": {
+        "ich": "arbeite",
+        "er": "arbeitet"
+      },
+      "auxiliary": "haben",
+      "participle": "gearbeitet",
+      "preterite": "arbeitete",
+      "takes": [],
+      "tags": [],
+      "example": "Ich arbeite als Softwareentwickler."
+    },
+    {
+      "infinitive": "bleiben",
+      "meaning": "to stay",
+      "present": {
+        "ich": "bleibe",
+        "er": "bleibt"
+      },
+      "auxiliary": "sein",
+      "participle": "geblieben",
+      "preterite": "blieb",
+      "takes": [],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Ich gehe ins Fitnessstudio, um gesund zu bleiben."
+    },
+    {
+      "infinitive": "entspannen",
+      "meaning": "to relax (someone)",
+      "present": {
+        "ich": "entspanne",
+        "er": "entspannt"
+      },
+      "auxiliary": "haben",
+      "participle": "entspannt",
+      "preterite": "entspannte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Das entspannt mich."
+    },
+    {
+      "infinitive": "sitzen",
+      "meaning": "to sit",
+      "present": {
+        "ich": "sitze",
+        "er": "sitzt"
+      },
+      "auxiliary": "haben",
+      "participle": "gesessen",
+      "preterite": "saß",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": [
+            "an"
+          ]
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Ich sitze viele Stunden am Schreibtisch."
+    },
+    {
+      "infinitive": "spazieren gehen",
+      "meaning": "to go for a walk",
+      "present": {
+        "ich": "gehe spazieren",
+        "er": "geht spazieren"
+      },
+      "auxiliary": "sein",
+      "participle": "spazieren gegangen",
+      "preterite": "ging spazieren",
+      "takes": [],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Ich gehe im Park spazieren."
+    },
+    {
+      "infinitive": "abwaschen",
+      "meaning": "to wash up",
+      "present": {
+        "ich": "wasche ab",
+        "er": "wäscht ab"
+      },
+      "auxiliary": "haben",
+      "participle": "abgewaschen",
+      "preterite": "wusch ab",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable",
+        "irregular"
+      ],
+      "example": "Ich wasche das Geschirr ab."
+    },
+    {
+      "infinitive": "anmachen",
+      "meaning": "to turn on",
+      "present": {
+        "ich": "mache an",
+        "er": "macht an"
+      },
+      "auxiliary": "haben",
+      "participle": "angemacht",
+      "preterite": "machte an",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable"
+      ],
+      "example": "Ich mache das Licht an."
+    },
+    {
+      "infinitive": "anrufen",
+      "meaning": "to call",
+      "present": {
+        "ich": "rufe an",
+        "er": "ruft an"
+      },
+      "auxiliary": "haben",
+      "participle": "angerufen",
+      "preterite": "rief an",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable",
+        "irregular"
+      ],
+      "example": "Ich rufe meine Mutter an."
+    },
+    {
+      "infinitive": "aufhängen",
+      "meaning": "to hang up",
+      "present": {
+        "ich": "hänge auf",
+        "er": "hängt auf"
+      },
+      "auxiliary": "haben",
+      "participle": "aufgehängt",
+      "preterite": "hängte auf",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable"
+      ],
+      "example": "Ich hänge die Jacke auf."
+    },
+    {
+      "infinitive": "aufräumen",
+      "meaning": "to tidy up",
+      "present": {
+        "ich": "räume auf",
+        "er": "räumt auf"
+      },
+      "auxiliary": "haben",
+      "participle": "aufgeräumt",
+      "preterite": "räumte auf",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable"
+      ],
+      "example": "Ich räume das Zimmer auf."
+    },
+    {
+      "infinitive": "aufstehen",
+      "meaning": "to get up",
+      "present": {
+        "ich": "stehe auf",
+        "er": "steht auf"
+      },
+      "auxiliary": "sein",
+      "participle": "aufgestanden",
+      "preterite": "stand auf",
+      "takes": [],
+      "tags": [
+        "separable",
+        "irregular"
+      ],
+      "example": "Ich stehe früh auf."
+    },
+    {
+      "infinitive": "ausleeren",
+      "meaning": "to empty",
+      "present": {
+        "ich": "leere aus",
+        "er": "leert aus"
+      },
+      "auxiliary": "haben",
+      "participle": "ausgeleert",
+      "preterite": "leerte aus",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable"
+      ],
+      "example": "Ich leere den Mülleimer aus."
+    },
+    {
+      "infinitive": "einkaufen",
+      "meaning": "to shop",
+      "present": {
+        "ich": "kaufe ein",
+        "er": "kauft ein"
+      },
+      "auxiliary": "haben",
+      "participle": "eingekauft",
+      "preterite": "kaufte ein",
+      "takes": [],
+      "tags": [
+        "separable"
+      ],
+      "example": "Ich kaufe im Supermarkt ein."
+    },
+    {
+      "infinitive": "fernsehen",
+      "meaning": "to watch TV",
+      "present": {
+        "ich": "sehe fern",
+        "er": "sieht fern"
+      },
+      "auxiliary": "haben",
+      "participle": "ferngesehen",
+      "preterite": "sah fern",
+      "takes": [],
+      "tags": [
+        "separable",
+        "irregular"
+      ],
+      "example": "Am Abend sehe ich fern."
+    },
+    {
+      "infinitive": "gehen um",
+      "meaning": "to be about",
+      "present": {
+        "ich": "–",
+        "er": "geht um (es geht um)"
+      },
+      "auxiliary": "sein",
+      "participle": "gegangen",
+      "preterite": "ging um",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": [
+            "um"
+          ]
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Es geht um den Termin."
+    },
+    {
+      "infinitive": "mitbringen",
+      "meaning": "to bring along",
+      "present": {
+        "ich": "bringe mit",
+        "er": "bringt mit"
+      },
+      "auxiliary": "haben",
+      "participle": "mitgebracht",
+      "preterite": "brachte mit",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable",
+        "irregular"
+      ],
+      "example": "Ich bringe einen Kuchen mit."
+    },
+    {
+      "infinitive": "umgehen mit",
+      "meaning": "to deal with, handle",
+      "present": {
+        "ich": "gehe ... um",
+        "er": "geht ... um"
+      },
+      "auxiliary": "sein",
+      "participle": "umgegangen",
+      "preterite": "ging ... um",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": [
+            "mit"
+          ]
+        }
+      ],
+      "tags": [
+        "separable",
+        "irregular"
+      ],
+      "example": "Er geht gut mit den Kindern um."
+    },
+    {
+      "infinitive": "verheiraten",
+      "meaning": "to marry off (to be married: verheiratet sein)",
+      "present": {
+        "ich": "verheirate",
+        "er": "verheiratet"
+      },
+      "auxiliary": "haben",
+      "participle": "verheiratet",
+      "preterite": "verheiratete",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Sie haben ihre Tochter verheiratet."
+    },
+    {
+      "infinitive": "vorbereiten",
+      "meaning": "to prepare",
+      "present": {
+        "ich": "bereite vor",
+        "er": "bereitet vor"
+      },
+      "auxiliary": "haben",
+      "participle": "vorbereitet",
+      "preterite": "bereitete vor",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable"
+      ],
+      "example": "Ich bereite das Essen vor."
+    },
+    {
+      "infinitive": "wehtun",
+      "meaning": "to hurt",
+      "present": {
+        "ich": "tue weh",
+        "er": "tut weh"
+      },
+      "auxiliary": "haben",
+      "participle": "wehgetan",
+      "preterite": "tat weh",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable",
+        "irregular"
+      ],
+      "example": "Der Kopf tut mir weh."
+    },
+    {
+      "infinitive": "zurückkommen",
+      "meaning": "to come back",
+      "present": {
+        "ich": "komme zurück",
+        "er": "kommt zurück"
+      },
+      "auxiliary": "sein",
+      "participle": "zurückgekommen",
+      "preterite": "kam zurück",
+      "takes": [],
+      "tags": [
+        "separable",
+        "irregular"
+      ],
+      "example": "Ich komme um 18 Uhr zurück."
+    },
+    {
+      "infinitive": "antworten",
+      "meaning": "to answer",
+      "present": {
+        "ich": "antworte",
+        "er": "antwortet"
+      },
+      "auxiliary": "haben",
+      "participle": "geantwortet",
+      "preterite": "antwortete",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Er antwortet mir."
+    },
+    {
+      "infinitive": "bestellen",
+      "meaning": "to order",
+      "present": {
+        "ich": "bestelle",
+        "er": "bestellt"
+      },
+      "auxiliary": "haben",
+      "participle": "bestellt",
+      "preterite": "bestellte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "An der Rezeption bestellen Sie."
+    },
+    {
+      "infinitive": "bezahlen",
+      "meaning": "to pay",
+      "present": {
+        "ich": "bezahle",
+        "er": "bezahlt"
+      },
+      "auxiliary": "haben",
+      "participle": "bezahlt",
+      "preterite": "bezahlte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Sie müssen bezahlen."
+    },
+    {
+      "infinitive": "brauchen",
+      "meaning": "to need",
+      "present": {
+        "ich": "brauche",
+        "er": "braucht"
+      },
+      "auxiliary": "haben",
+      "participle": "gebraucht",
+      "preterite": "brauchte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Wir brauchen Getränke."
+    },
+    {
+      "infinitive": "empfangen",
+      "meaning": "to welcome",
+      "present": {
+        "ich": "empfange",
+        "er": "empfängt"
+      },
+      "auxiliary": "haben",
+      "participle": "empfangen",
+      "preterite": "empfing",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Wir empfangen Sie am Eingang."
+    },
+    {
+      "infinitive": "erzählen",
+      "meaning": "to tell",
+      "present": {
+        "ich": "erzähle",
+        "er": "erzählt"
+      },
+      "auxiliary": "haben",
+      "participle": "erzählt",
+      "preterite": "erzählte",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        },
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Erzählen Sie Ihren Freunden die Geschichte!"
+    },
+    {
+      "infinitive": "essen",
+      "meaning": "to eat",
+      "present": {
+        "ich": "esse",
+        "er": "isst"
+      },
+      "auxiliary": "haben",
+      "participle": "gegessen",
+      "preterite": "aß",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "In der Mittagspause esse ich in der Kantine."
+    },
+    {
+      "infinitive": "fotografieren",
+      "meaning": "to photograph",
+      "present": {
+        "ich": "fotografiere",
+        "er": "fotografiert"
+      },
+      "auxiliary": "haben",
+      "participle": "fotografiert",
+      "preterite": "fotografierte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Sie dürfen nicht fotografieren."
+    },
+    {
+      "infinitive": "fragen",
+      "meaning": "to ask",
+      "present": {
+        "ich": "frage",
+        "er": "fragt"
+      },
+      "auxiliary": "haben",
+      "participle": "gefragt",
+      "preterite": "fragte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Ich frage den Mann."
+    },
+    {
+      "infinitive": "geben",
+      "meaning": "to give",
+      "present": {
+        "ich": "gebe",
+        "er": "gibt"
+      },
+      "auxiliary": "haben",
+      "participle": "gegeben",
+      "preterite": "gab",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        },
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Schüler wollen ein Konzert geben."
+    },
+    {
+      "infinitive": "gehören",
+      "meaning": "to belong to",
+      "present": {
+        "ich": "–",
+        "er": "gehört"
+      },
+      "auxiliary": "haben",
+      "participle": "gehört",
+      "preterite": "gehörte",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Das Auto gehört dem Chef."
+    },
+    {
+      "infinitive": "gratulieren",
+      "meaning": "to congratulate",
+      "present": {
+        "ich": "gratuliere",
+        "er": "gratuliert"
+      },
+      "auxiliary": "haben",
+      "participle": "gratuliert",
+      "preterite": "gratulierte",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Wir gratulieren ihr."
+    },
+    {
+      "infinitive": "helfen",
+      "meaning": "to help",
+      "present": {
+        "ich": "helfe",
+        "er": "hilft"
+      },
+      "auxiliary": "haben",
+      "participle": "geholfen",
+      "preterite": "half",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Ich helfe dir."
+    },
+    {
+      "infinitive": "hören",
+      "meaning": "to hear, listen",
+      "present": {
+        "ich": "höre",
+        "er": "hört"
+      },
+      "auxiliary": "haben",
+      "participle": "gehört",
+      "preterite": "hörte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Er hört oft stundenlang Musik."
+    },
+    {
+      "infinitive": "kaufen",
+      "meaning": "to buy",
+      "present": {
+        "ich": "kaufe",
+        "er": "kauft"
+      },
+      "auxiliary": "haben",
+      "participle": "gekauft",
+      "preterite": "kaufte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Sollen wir Getränke kaufen?"
+    },
+    {
+      "infinitive": "leihen",
+      "meaning": "to borrow, lend",
+      "present": {
+        "ich": "leihe",
+        "er": "leiht"
+      },
+      "auxiliary": "haben",
+      "participle": "geliehen",
+      "preterite": "lieh",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Sie können Bücher leihen."
+    },
+    {
+      "infinitive": "lieben",
+      "meaning": "to love",
+      "present": {
+        "ich": "liebe",
+        "er": "liebt"
+      },
+      "auxiliary": "haben",
+      "participle": "geliebt",
+      "preterite": "liebte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Ich liebe ihn."
+    },
+    {
+      "infinitive": "nehmen",
+      "meaning": "to take",
+      "present": {
+        "ich": "nehme",
+        "er": "nimmt"
+      },
+      "auxiliary": "haben",
+      "participle": "genommen",
+      "preterite": "nahm",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Sollst du Medizin nehmen?"
+    },
+    {
+      "infinitive": "passen",
+      "meaning": "to fit, suit",
+      "present": {
+        "ich": "–",
+        "er": "passt"
+      },
+      "auxiliary": "haben",
+      "participle": "gepasst",
+      "preterite": "passte",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Die Schuhe passen der Frau gut."
+    },
+    {
+      "infinitive": "rauchen",
+      "meaning": "to smoke",
+      "present": {
+        "ich": "rauche",
+        "er": "raucht"
+      },
+      "auxiliary": "haben",
+      "participle": "geraucht",
+      "preterite": "rauchte",
+      "takes": [],
+      "tags": [],
+      "example": "Sie dürfen nicht rauchen."
+    },
+    {
+      "infinitive": "reservieren",
+      "meaning": "to reserve",
+      "present": {
+        "ich": "reserviere",
+        "er": "reserviert"
+      },
+      "auxiliary": "haben",
+      "participle": "reserviert",
+      "preterite": "reservierte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Reservieren Sie Ihre Plätze."
+    },
+    {
+      "infinitive": "sagen",
+      "meaning": "to say, tell",
+      "present": {
+        "ich": "sage",
+        "er": "sagt"
+      },
+      "auxiliary": "haben",
+      "participle": "gesagt",
+      "preterite": "sagte",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        },
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Wir sagen Ihnen den Namen."
+    },
+    {
+      "infinitive": "schenken",
+      "meaning": "to give (a gift)",
+      "present": {
+        "ich": "schenke",
+        "er": "schenkt"
+      },
+      "auxiliary": "haben",
+      "participle": "geschenkt",
+      "preterite": "schenkte",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        },
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Ich habe meinem Bruder eine CD geschenkt."
+    },
+    {
+      "infinitive": "schlafen",
+      "meaning": "to sleep",
+      "present": {
+        "ich": "schlafe",
+        "er": "schläft"
+      },
+      "auxiliary": "haben",
+      "participle": "geschlafen",
+      "preterite": "schlief",
+      "takes": [],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Soll ich schlafen?"
+    },
+    {
+      "infinitive": "schmecken",
+      "meaning": "to taste (good)",
+      "present": {
+        "ich": "–",
+        "er": "schmeckt"
+      },
+      "auxiliary": "haben",
+      "participle": "geschmeckt",
+      "preterite": "schmeckte",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Der Wein schmeckt dem Mann nicht."
+    },
+    {
+      "infinitive": "sehen",
+      "meaning": "to see",
+      "present": {
+        "ich": "sehe",
+        "er": "sieht"
+      },
+      "auxiliary": "haben",
+      "participle": "gesehen",
+      "preterite": "sah",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Ich möchte den neuen Film sehen."
+    },
+    {
+      "infinitive": "stehen",
+      "meaning": "to suit (clothes); to stand",
+      "present": {
+        "ich": "stehe",
+        "er": "steht"
+      },
+      "auxiliary": "haben",
+      "participle": "gestanden",
+      "preterite": "stand",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Die Jacke steht dem Mädchen nicht gut."
+    },
+    {
+      "infinitive": "telefonieren",
+      "meaning": "to phone",
+      "present": {
+        "ich": "telefoniere",
+        "er": "telefoniert"
+      },
+      "auxiliary": "haben",
+      "participle": "telefoniert",
+      "preterite": "telefonierte",
+      "takes": [],
+      "tags": [],
+      "example": "Sie dürfen nicht telefonieren."
+    },
+    {
+      "infinitive": "tragen",
+      "meaning": "to wear, carry",
+      "present": {
+        "ich": "trage",
+        "er": "trägt"
+      },
+      "auxiliary": "haben",
+      "participle": "getragen",
+      "preterite": "trug",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Sie müssen Ihre Brille tragen."
+    },
+    {
+      "infinitive": "trinken",
+      "meaning": "to drink",
+      "present": {
+        "ich": "trinke",
+        "er": "trinkt"
+      },
+      "auxiliary": "haben",
+      "participle": "getrunken",
+      "preterite": "trank",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "irregular"
+      ],
+      "example": "Sie müssen viel trinken."
+    },
+    {
+      "infinitive": "zeigen",
+      "meaning": "to show",
+      "present": {
+        "ich": "zeige",
+        "er": "zeigt"
+      },
+      "auxiliary": "haben",
+      "participle": "gezeigt",
+      "preterite": "zeigte",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        },
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Sie müssen Ihren Bibliotheksausweis zeigen."
+    },
+    {
+      "infinitive": "zuhören",
+      "meaning": "to listen to",
+      "present": {
+        "ich": "höre zu",
+        "er": "hört zu"
+      },
+      "auxiliary": "haben",
+      "participle": "zugehört",
+      "preterite": "hörte zu",
+      "takes": [
+        {
+          "case": "Dat",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable"
+      ],
+      "example": "Die Kinder hören ihm zu."
+    },
+    {
+      "infinitive": "ausprobieren",
+      "meaning": "to try out",
+      "present": {
+        "ich": "probiere aus",
+        "er": "probiert aus"
+      },
+      "auxiliary": "haben",
+      "participle": "ausprobiert",
+      "preterite": "probierte aus",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [
+        "separable"
+      ],
+      "example": "Man kann Produkte ausprobieren."
+    },
+    {
+      "infinitive": "stärken",
+      "meaning": "to strengthen",
+      "present": {
+        "ich": "stärke",
+        "er": "stärkt"
+      },
+      "auxiliary": "haben",
+      "participle": "gestärkt",
+      "preterite": "stärkte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Ihr stärkt die lokale Wirtschaft."
+    },
+    {
+      "infinitive": "unterstützen",
+      "meaning": "to support",
+      "present": {
+        "ich": "unterstütze",
+        "er": "unterstützt"
+      },
+      "auxiliary": "haben",
+      "participle": "unterstützt",
+      "preterite": "unterstützte",
+      "takes": [
+        {
+          "case": "Akk",
+          "prepositions": []
+        }
+      ],
+      "tags": [],
+      "example": "Ihr unterstützt die Gemeinschaft."
+    }
+  ],
+  "modals": [
+    {
+      "infinitive": "dürfen",
+      "meaning": "may, to be allowed to",
+      "present": [
+        "darf",
+        "darfst",
+        "darf",
+        "dürfen",
+        "dürft",
+        "dürfen"
+      ],
+      "examples": [
+        "Ich darf heute länger schlafen.",
+        "Du darfst hier parken.",
+        "Er darf nicht rauchen.",
+        "Wir dürfen heute früher gehen.",
+        "Ihr dürft jetzt nach Hause gehen.",
+        "Sie dürfen hier nicht fotografieren."
+      ],
+      "preterite": "durfte",
+      "perfekt": "hat gedurft"
+    },
+    {
+      "infinitive": "können",
+      "meaning": "can, to be able to",
+      "present": [
+        "kann",
+        "kannst",
+        "kann",
+        "können",
+        "könnt",
+        "können"
+      ],
+      "examples": [
+        "Ich kann Deutsch und Englisch sprechen.",
+        "Du kannst gut kochen.",
+        "Sie kann sehr gut Spanisch.",
+        "Wir können morgen kommen.",
+        "Ihr könnt mir helfen.",
+        "Sie können mich anrufen."
+      ],
+      "preterite": "konnte",
+      "perfekt": "hat gekonnt"
+    },
+    {
+      "infinitive": "mögen",
+      "meaning": "to like",
+      "present": [
+        "mag",
+        "magst",
+        "mag",
+        "mögen",
+        "mögt",
+        "mögen"
+      ],
+      "examples": [
+        "Ich mag die Tiere sehr.",
+        "Du magst Kaffee.",
+        "Er mag den Hund.",
+        "Wir mögen die Stadt.",
+        "Ihr mögt Pizza, oder?",
+        "Sie mögen Musik."
+      ],
+      "preterite": "mochte",
+      "perfekt": "hat gemocht"
+    },
+    {
+      "infinitive": "möchten",
+      "meaning": "would like to",
+      "present": [
+        "möchte",
+        "möchtest",
+        "möchte",
+        "möchten",
+        "möchtet",
+        "möchten"
+      ],
+      "examples": [
+        "Ich möchte ein Wasser, bitte.",
+        "Du möchtest bestimmt einen Kaffee.",
+        "Der Chef möchte mit Ihnen sprechen.",
+        "Wir möchten einen Tisch reservieren.",
+        "Möchtet ihr etwas essen?",
+        "Sie möchten bald umziehen."
+      ],
+      "preterite": "– (wollte)",
+      "perfekt": "–"
+    },
+    {
+      "infinitive": "müssen",
+      "meaning": "must, to have to",
+      "present": [
+        "muss",
+        "musst",
+        "muss",
+        "müssen",
+        "müsst",
+        "müssen"
+      ],
+      "examples": [
+        "Ich muss heute lange arbeiten.",
+        "Du musst mehr Wasser trinken.",
+        "Er muss zum Chef gehen.",
+        "Wir müssen jetzt gehen.",
+        "Ihr müsst die Hausaufgaben machen.",
+        "Sie müssen den Termin bestätigen."
+      ],
+      "preterite": "musste",
+      "perfekt": "hat gemusst"
+    },
+    {
+      "infinitive": "sollen",
+      "meaning": "should, to be supposed to",
+      "present": [
+        "soll",
+        "sollst",
+        "soll",
+        "sollen",
+        "sollt",
+        "sollen"
+      ],
+      "examples": [
+        "Ich soll morgen früher kommen.",
+        "Du sollst Anastasia anrufen.",
+        "Er soll das Fest organisieren.",
+        "Wir sollen heute lernen.",
+        "Ihr sollt leise sein.",
+        "Sie sollen das Formular ausfüllen."
+      ],
+      "preterite": "sollte",
+      "perfekt": "hat gesollt"
+    },
+    {
+      "infinitive": "wollen",
+      "meaning": "to want to",
+      "present": [
+        "will",
+        "willst",
+        "will",
+        "wollen",
+        "wollt",
+        "wollen"
+      ],
+      "examples": [
+        "Ich will Deutsch lernen.",
+        "Du willst ins Fitnessstudio gehen.",
+        "Sie will Spanisch lernen.",
+        "Wir wollen heute ins Theater gehen.",
+        "Ihr wollt ins Restaurant gehen.",
+        "Sie wollen im Park spazieren gehen."
+      ],
+      "preterite": "wollte",
+      "perfekt": "hat gewollt"
+    }
+  ]
+}

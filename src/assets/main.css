@@ -1,0 +1,102 @@
+@import 'tailwindcss';
+
+/*
+  Design tokens. Three grammatical genders get three fixed colours that are used
+  for nothing else: der (blue), die (raspberry), das (green). Amber marks verbs
+  that form the Perfekt with "sein". Everything else stays in quiet ink and grey.
+*/
+:root {
+  color-scheme: light;
+  --paper: #f2f4f8;
+  --surface: #ffffff;
+  --ink: #14213d;
+  --muted: #55607a;
+  --line: #d8dde8;
+  --der: #2f5bea;
+  --die: #d92d6e;
+  --das: #12805a;
+  --sein: #a85a00;
+  --der-soft: #e3eafe;
+  --die-soft: #fce3ec;
+  --das-soft: #ddf3ea;
+  --sein-soft: #fdebd3;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #0e1320;
+  --surface: #161d2e;
+  --ink: #e8ecf5;
+  --muted: #9aa5bf;
+  --line: #2a3350;
+  --der: #7c9bff;
+  --die: #ff7aa8;
+  --das: #3fd29a;
+  --sein: #ffb454;
+  --der-soft: #1b2650;
+  --die-soft: #3a1830;
+  --das-soft: #123a2d;
+  --sein-soft: #3d2a0e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --paper: #0e1320;
+    --surface: #161d2e;
+    --ink: #e8ecf5;
+    --muted: #9aa5bf;
+    --line: #2a3350;
+    --der: #7c9bff;
+    --die: #ff7aa8;
+    --das: #3fd29a;
+    --sein: #ffb454;
+    --der-soft: #1b2650;
+    --die-soft: #3a1830;
+    --das-soft: #123a2d;
+    --sein-soft: #3d2a0e;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-der: var(--der);
+  --color-die: var(--die);
+  --color-das: var(--das);
+  --color-sein: var(--sein);
+  --color-der-soft: var(--der-soft);
+  --color-die-soft: var(--die-soft);
+  --color-das-soft: var(--das-soft);
+  --color-sein-soft: var(--sein-soft);
+  --font-sans: 'Bricolage Grotesque Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Newsreader Variable', Georgia, 'Times New Roman', serif;
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+  }
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  :focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .field-label {
+    @apply text-muted mb-0.5 block text-xs lg:hidden;
+  }
+  .example {
+    @apply font-serif text-[1.05rem] leading-snug italic;
+  }
+}
